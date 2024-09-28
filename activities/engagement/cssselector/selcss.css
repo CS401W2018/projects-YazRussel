@@ -1,0 +1,25 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#first{
+    color: rgb(117, 81, 151);
+}
+.bolder{
+    font-weight: 600;
+}
+main{
+    font-size: smaller;
+    color: brown;
+    font-weight: 50;
+}
+.green{
+    color: greenyellow;
+}
+.bigger{
+    font-size: 24pt;
+}
+main .bigger{
+    /* Convert it to bigger whatever inside the main */
+    font-family: Jokerman;
+}
+

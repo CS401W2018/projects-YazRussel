@@ -1,0 +1,68 @@
+#welcome{
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: white;
+}
+
+#title{
+    background-color: #F2F6DF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: larger;
+    text-align: center;
+}
+
+#break{
+    height: 5%;
+    width: 75%;
+    border-bottom: 5px solid black;
+    border-radius: 30pc;
+}
+nav{
+    text-align: center;
+}
+a{
+    text-align: center;
+    color: rgb(0, 6, 42);
+}
+#interesado{
+    text-align: center;
+    margin-right: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#bayani{
+    text-align: center;
+    margin-left: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+main{
+    text-align: justify;
+    margin-right: 20px;
+}
+body{
+    background-color: #FEFFFA;
+}
+.font{
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:large;
+}
+.emphasize{
+    font-weight: bold;
+    color: rgb(7, 2, 41);
+}
+.deemphasize{
+    color: #656271;
+}
+span{
+    text-decoration: underline;
+}
+dt{
+    font-style: italic;
+    font-weight: 200;
+}
+footer{
+    color: white;
+    background-color: #989D86;
+}

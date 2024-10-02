@@ -1,0 +1,9 @@
+body{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+}
+#light{
+    height: auto;
+    width: 600px;
+}

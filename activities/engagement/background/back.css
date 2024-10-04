@@ -1,0 +1,19 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background: url(blue-background-7470781_1280.jpg) blue;
+
+}
+
+header{
+    background: url(graffiti.png) top right no-repeat;
+    background-size: 180px 168px;
+}
+
+nav{
+    color:antiquewhite;
+}
+
+.current{
+    color:aquamarine
+}

@@ -1,0 +1,83 @@
+.title{
+    color:yellowgreen;
+    margin: 0;
+    padding: 0 ;
+    font-family: 'Mansalva', cursive;
+    font-size: 90px;
+    font-weight: 900;
+    text-align: center;
+}
+nav{
+    background-image: url(tree.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    margin-right: 50px;
+    text-align: center;
+}
+
+
+body{
+    background-image: url(alohas.png);
+    background-repeat: repeat;
+    background-position: center;
+    color: #ddd;
+}
+li{
+    margin-right: 50px;
+}
+ul{
+    list-style-image: url(mask.png);
+    display:flex;
+}
+h2{
+    font-family: Pacifico cursive;
+    color: black;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    display: block;
+}
+a{
+    text-decoration: none;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    color: darkorange;
+    font-size: 30px;
+    display: block;
+}
+#homemain{
+    color:black;
+    padding: 20px;
+    text-align: justify;
+    margin-right: 80px;
+}
+#current{
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 5px;
+    color:black;
+    display: inline-block;
+    background-color: white;
+}
+.box{
+    display: inline-block;
+    background-color: whitesmoke;
+    border: #ddd;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px;
+}
+.gallery{
+    justify-content: space-around;
+    margin: 20px;
+}
+.photo{
+    text-align: left;
+    position: relative;
+}
+img{
+    border-radius: 20px;
+}

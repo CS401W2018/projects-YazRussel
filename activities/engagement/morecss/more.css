@@ -1,0 +1,38 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+}
+#wrapper{
+    width:600px;
+    margin: 0 auto;
+    background-color: aliceblue;
+    border: thin solid black;
+
+}
+
+header{
+    background-color: aquamarine;
+    width: 70%;
+    margin: 30px auto;
+    text-align: center;
+    padding: 50px 30px 100px 3px;
+}
+
+header h1{
+    margin-bottom: 0;
+    border: 5px solid red;
+}
+
+figure{
+    border: thin solid black;
+    width: 200px;
+}
+img{
+    width: 200px;
+}
+
+nav{
+    background-color:  black;
+    height: 200px;
+    margin-top: 40px;
+}

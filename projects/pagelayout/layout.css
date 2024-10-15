@@ -3,11 +3,9 @@ body{
     background: linear-gradient(to bottom, #201E43,#134B70 );
     color: #EEEEEE;
     font-family: 'Times New Roman', Times, serif;
-    font-optical-sizing: auto;
-    text-align: normal;
-    font-weight: weight;
-    font-size: normal;
-    line-height: auto;
+    text-align: center;
+    font-weight: 400;
+    font-size: medium;
     font-style: normal;
     /* text-transform: uppercase; */
 
@@ -75,6 +73,7 @@ nav a:hover{
 .textdesign{
     margin-right: 30px;
     padding: 10px;
+    line-height: 1.5;
 }
 
 #figuring{

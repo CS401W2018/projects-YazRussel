@@ -1,0 +1,112 @@
+body{
+    background-color: #201E43;
+    background: linear-gradient(to bottom, #201E43,#134B70 );
+    color: #EEEEEE;
+    font-family: 'Times New Roman', Times, serif;
+    font-optical-sizing: auto;
+    text-align: normal;
+    font-weight: weight;
+    font-size: normal;
+    line-height: auto;
+    font-style: normal;
+    /* text-transform: uppercase; */
+
+}
+
+.title{
+    font-family: 'Roboto Slab', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px cadetblue;
+    font-size: 40px;
+}
+
+header{
+
+    max-width: 900px;
+    /* width: auto; */
+    /* If you want to center your header just use margin: auto;*/
+    margin: auto;
+    text-align: center;
+    background-color:#134B70;
+    border-radius: 16px;
+    box-shadow: 0px 3px 0px 0px #E2F1E7;
+
+}
+nav{
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    /* background-color: #629584; */
+    display: flex;
+    justify-content: center;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li{
+    display: inline;
+    margin-right: 50px;
+    padding: 0;
+    margin: 0 10px;
+}
+
+nav a{
+    padding: 15px;
+    border-radius: 25px;
+    background-color: #508C9B;
+    text-decoration: none;
+    border: black 2px;
+    color:#EEEEEE;
+    /* border-bottom: thin solid white; */
+    margin-right: 20px;
+    box-sizing: border-box;
+}
+
+nav a:hover{
+    color: beige;
+    text-decoration: underline;
+    background-color: #629584;
+}
+.textdesign{
+    margin-right: 30px;
+    padding: 10px;
+}
+
+#figuring{
+    width: 400px;
+    height: 752px;
+    background-color: #134B70;
+    border: thin solid white;
+    float: left;
+    margin-bottom: 40px;
+}
+#figuring img{
+    width: 400px;
+    height: 711px;
+}
+.end{
+    clear: both;
+}
+#cool{
+    text-align: center;
+    padding: 10px;
+
+}
+
+footer{
+    margin: auto;
+}
+
+#wrapper{
+    max-width: 900px;
+    margin: auto;
+}
+
+.logo{
+    background: url(assassin.png) top right no-repeat;
+}

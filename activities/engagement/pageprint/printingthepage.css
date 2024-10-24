@@ -1,0 +1,51 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+header{
+    background-color: #aee2ae;
+    color: aliceblue;
+}
+
+header h1{
+    margin: 0px;
+}
+
+nav{
+    /* display: flex;
+    background-color: grey;
+    justify-content: space-around; */
+    display: none;
+}
+
+nav a{
+    display: block;
+    /* This padding doesn't work if the A tag is inline */
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+.wrap{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container{
+    border: thin solid black;
+    width: 200px;
+    /* overflow: hidden; */
+    box-shadow: 3px 3px 5cm rgba(50,50,50,50%);
+    margin: 5px
+}
+
+.container img{
+    width: 100%;
+}
+
+

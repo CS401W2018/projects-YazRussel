@@ -30,6 +30,7 @@ nav a:hover{
     text-decoration: underline;
 }
 
+/* The order matters, it will always read the one code, it will override what already been told */
 .wrap{
     display: flex;
     justify-content: space-evenly;
@@ -47,4 +48,30 @@ nav a:hover{
     width: 100%;
 }
 
+@media only screen and (max-width: 650px){
+    body{
+        background-color: burlywood;
+    }
+    .wrap{
+        /* display: block;
+        width: 50%;
+        margin: 0 auto; */
+        flex-wrap: wrap;
+        justify-content: center;
+}
+    nav{
+        flex-direction: column;
+    }
+    nav a{
+        border-bottom: thin solid #fff;
+    }
+
+    .container{
+        width: 100%;
+        margin: 10px ;
+    }
+    .main-container{
+        order: -1;
+    }
+}
 

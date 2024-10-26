@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <link rel="stylesheet" href="print.css" media="screen">
+    <link rel="stylesheet" href="printingthepage.css" media="print">
+</head>
+<body>
+    <header>
+        <h1>Title</h1>
+    </header>
+
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+
+        
+    </nav>
+
+    <main>
+        <ol>
+            <li>Why do we need a viewport meta tag?
+                <br>
+                The viewport meta tag is really important because it helps control how a website looks on your phone's browser. It lets web developers set the size and shape of the part of the browser window where the website shows up. This means they can make sure the website looks good and works right on different-sized screens.
+            </li>
+            <li>When you select the same tag twice, and in one of them you say "flex-direction: column;" and the other says "flex-direction: row;", which one takes priority?
+                <br>
+                The flex-direction: row; will take priority because it is defined last in the CSS. It override the previous one
+            </li>
+            <li>How do you change the CSS for a web page displayed on a phone?
+                <br>
+                Use this "@media only screen and (max-width: 600px)"
+            </li>
+        </ol>
+
+        <hr>
+        <h2>Main Content</h2>
+        <div class="wrap">
+            <div class="container">
+                <img src="wai3.png" alt="Beach Side">
+                <h3>Waikiki Beach Left</h3>
+                <p>Lorem ipusm</p>
+            </div>
+
+            <div class="container">
+                <img src="wai3.png" alt="Beach Side">
+                <h3>Waikiki Center</h3>
+                <p>Lorem ipusm</p>
+            </div>
+
+            <div class="container">
+                <img src="wai3.png" alt="Beach Side">
+                <h3>Waikiki Beach Right</h3>
+                <p>Lorem ipusm</p>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024, Yaz Russel</p>
+    </footer>
+</body>
+</html>

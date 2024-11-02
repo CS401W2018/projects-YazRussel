@@ -2,12 +2,14 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 .schedule{
     margin: 5px auto;
-    /* border: thin solid black; */
-    border-spacing: 0;
+    border: thin solid black;
+    /* border-spacing: 10px; */
     border-collapse: collapse;
     /* background-color: gray; */
+    caption-side: bottom;
 }
 
 /* .schedule td, .schedule th{
@@ -24,4 +26,11 @@ body{
 .schedule tfoot{
     background-color: darkblue;
     color: white;
+}
+
+/* You should specify everything you cannot just do .schedule td, th
+because if you do then this means that you wanted your th in other table 
+to have the same css result */
+.schedule td, .schedule th{
+    border: thin solid black;
 }

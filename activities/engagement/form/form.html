@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>Form</h1>
+    </header>
+
+    <nav>
+        <a href="#">Link</a></li>
+        <a href="#">Link</a></li>
+        <a href="#">Link</a></li>
+    </nav>
+
+    <main>
+        <!-- The "?" and the following text is the query string 
+         example = ?first=Yaz&last=Darasin-->
+
+        <ol>
+            <li>
+                The form tag has an "action" attribute. What does it do?
+                <br>
+                This form defines where to send the data for processing.
+            </li>
+            <li>
+                The form tag has a "method" attribute. What does it do?
+                <br>
+                The method attribute let you choose between get and post. Keep in mind that this two are secured.
+            </li>
+            <li>
+                What is the difference between a "POST" and a "GET"?
+                <br>
+                When we do the method get all of the information goes to the http protocol on the top of the website. When we are reading information, to request data from a specified source.
+                <br>
+                The method post changes information, this will also hide your query string on the search tool on the website. Use this when you want to send a data to a server to create or update a resource. The post method is just a little bit secured because it doesn't show on your address bar.   
+                <br>
+            </li>
+        </ol>
+
+        <hr>
+
+        <form action="processing.html" method="post">
+            First Name: <input type="text" name="first" value="Joe" required="required">
+            <br>
+            Last Name: <input type="text" name="last" placeholder="Last Name">
+            <br>
+            Password: <input type="password" name="passs" >
+            <br>
+            <input type="checkbox" name="rember" checked>Remember Me <br>
+            Grade:
+            <!-- If it has the same name then you can only pick one, but if its different then you can choose many -->
+            <br>
+            <input type="radio" name="grade" value="Freshman">Freshman <br>
+            <input type="radio" name="grade" value="Sophomore">Sophomore <br>
+            <input type="radio" name="grade" value="Junior">Junior <br>
+            <input type="radio" name="difference" value="Senior">Senior <br>
+            <select name="state" id="state">
+                <option value="blank"></option>
+                <option value="Hawaii">Hawaii</option>
+                <option value="Utah">Utah</option>
+                <option value="California">California</option>
+                <option value="New York">New York</option>
+            </select>
+            <br>
+
+            <textarea name="comment" id="comment"></textarea>
+            <input type="submit">
+        </form>
+        
+    </main>
+
+    <footer>
+        <p> &copy;2024, Russel</p>
+    </footer>
+</body>
+</html>

@@ -40,36 +40,79 @@
                 The method post changes information, this will also hide your query string on the search tool on the website. Use this when you want to send a data to a server to create or update a resource. The post method is just a little bit secured because it doesn't show on your address bar.   
                 <br>
             </li>
+            <hr>
+            <li>
+                What are different ways to style your form?
+                <br>
+                You can custome the checkboxes, radios, submit, responsive, hover and focus effect, and put a placeholder.
+            </li>
+            <li>
+                Why does the professor like to use flex?
+                <br>
+                Whenever you use br tag it means you are not using a block. It handles dynamic content sizes.
+            </li>
         </ol>
 
         <hr>
 
         <form action="processing.html" method="post">
-            First Name: <input type="text" name="first" value="Joe" required="required">
-            <br>
-            Last Name: <input type="text" name="last" placeholder="Last Name">
-            <br>
-            Password: <input type="password" name="passs" >
-            <br>
-            <input type="checkbox" name="rember" checked>Remember Me <br>
-            Grade:
-            <!-- If it has the same name then you can only pick one, but if its different then you can choose many -->
-            <br>
-            <input type="radio" name="grade" value="Freshman">Freshman <br>
-            <input type="radio" name="grade" value="Sophomore">Sophomore <br>
-            <input type="radio" name="grade" value="Junior">Junior <br>
-            <input type="radio" name="difference" value="Senior">Senior <br>
-            <select name="state" id="state">
-                <option value="blank"></option>
-                <option value="Hawaii">Hawaii</option>
-                <option value="Utah">Utah</option>
-                <option value="California">California</option>
-                <option value="New York">New York</option>
-            </select>
-            <br>
+            <fieldset>
+                <legend>Sign Up</legend>
+                <div class="form-row">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="first" value="Joe" required="required">
+                </div>
+                
+                <div class="form-row">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="last" placeholder="Last Name">
+                </div>
 
-            <textarea name="comment" id="comment"></textarea>
-            <input type="submit">
+                <div class="form-row">
+                    <label for="pword">Password:</label>
+                    <input type="password" id="pword" name="pass" >
+                </div>
+            
+            <div class="form-row">
+                <div class="spacer"></div>
+                <label>
+                    <input type="checkbox" name="rember" checked>Remember&nbsp;Me
+                </label>
+            </div>
+
+            <div class="check-row">
+                <div class="spacer"></div>
+                <label for="grade">Grade: </label>
+            <!-- If it has the same name then you can only pick one, but if its different then you can choose many -->
+                <br>
+                <input type="radio" name="grade" value="Freshman">Freshman <br>
+                <input type="radio" name="grade" value="Sophomore">Sophomore <br>
+                <input type="radio" name="grade" value="Junior">Junior <br>
+                <input type="radio" name="difference" value="Senior">Senior <br>
+            </div>
+
+            <div class="form-row">
+                <label for="state">State</label>
+                <select name="state" id="state">
+                    <option value="blank"></option>
+                    <option value="Hawaii">Hawaii</option>
+                    <option value="Utah">Utah</option>
+                    <option value="California">California</option>
+                    <option value="New York">New York</option>
+                </select>
+            </div>
+           
+            <div class="form-row">
+                <label for="comment">Comments</label>
+                <textarea name="comment" id="comment"></textarea>
+            </div>
+
+            <div class="form-row">
+                <div class="spacer"></div>
+                <input type="submit">
+                
+            </div>
+            </fieldset>
         </form>
         
     </main>

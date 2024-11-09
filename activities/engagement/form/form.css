@@ -20,6 +20,7 @@ body{
 
 .spacer{
     width: 150px;
+    text-align: right;
 }
 
 .form-row label{
@@ -30,6 +31,7 @@ body{
 .check-row{
     display: flex;
     gap: 10px;
+    margin: 10px 0;
 }
 
 fieldset{
@@ -45,9 +47,28 @@ legend{
     color: darkslategrey;
 }
 
+input:not([type='sumbit']), select, textarea{
+    padding: 10px;
+    font-size: 1.5em;
+    border-radius: 3px;
+    background-color: whitesmoke;
+}
+
+input:not([type='sumbit']):focus, select:focus, textarea:focus{
+    background-color: white;
+}
+
+input[type='sumbit']{
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px rgb(200, 200, 200, 50);
+}
+
 
 @media only screen and (max-width: 600px){
-    .form-row{
+    .form-row, .check-row{
         flex-direction: column;
     }
 

@@ -109,6 +109,13 @@ fieldset legend {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
 }
 
+header{
+    text-align: center;
+}
+
+footer{
+    text-align: center ;
+}
 
 
 

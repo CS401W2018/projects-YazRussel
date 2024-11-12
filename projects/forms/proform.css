@@ -1,0 +1,144 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form-row{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+    
+.form-row input{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    margin-left: 0;
+
+}
+
+.form-row input:focus{
+    background-color: aliceblue;
+}
+
+.form-row label{    
+    margin: auto 0;
+    width: 90px;
+    text-align: left;
+}
+
+
+.check-row{
+    display: block;
+    gap: 10px;
+    margin: 25px 0;
+}
+
+.check-row label{
+    display: block;
+    margin-top: 5px;
+}
+
+.check-row input{
+    width: 80px;
+}
+
+.space{
+    text-align: left;
+    
+}
+
+#pindot input{
+    flex-direction: column;
+    display: flex;
+}
+
+textarea{
+    width: 90%;
+    height: 100px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+fieldset{
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+}
+
+input:not([type='submit'], select, textarea){
+    padding: 10px;
+    font-size: 1.5em;
+    border-radius: 60px;
+    background-color: whitesmoke;
+}
+
+input:not([type='submit']):focus, select:focus, textarea:focus{
+    background-color:cornsilk;
+}
+
+input[type='sumbit']{
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px rgb(200, 200, 200, 50);
+    
+}
+
+.form-middle input[type='submit']{
+    width: 100px;
+    height: 50px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+
+
+}
+
+fieldset legend {
+    font-size: 1.2em;        
+    color: #333;             
+    background-color: #f7f7f7; 
+    border: 1px solid #ddd;  
+    padding: 5px 10px;       
+    border-radius: 5px;     
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+
+
+
+
+@media only screen and (max-width:800px) {
+    .form-row, .check-row{
+        flex-direction: column;
+    }
+
+    .form-row{
+        text-align: left;
+    }
+
+    .form-row label{
+        width: 200px;
+    }
+
+    .check-row input{
+        width: 20px;
+    }
+
+    .check-row textarea{
+        width: 100%;
+        margin: 10px 0;
+    
+    }
+    
+    .form-middle{
+        width: 15%;
+        margin: 0 auto;
+    }
+
+}

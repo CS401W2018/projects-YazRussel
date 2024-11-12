@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="proform.css">
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <nav>
+
+    </nav>
+        
+    <main>
+        <form action="processing.html" method="post">
+        <fieldset>
+            <legend>Survey</legend>
+
+            <div class="form-row">
+                <label for="Name">Name</label>
+                <input type="text" name="user" id="username" required>
+            </div>
+
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input type="email" name="mail" id="email">
+            </div>
+
+            <div class="form-row">
+                <label for="edad">Age</label>
+                <input type="text" name="age" id="edad" required>
+            </div>
+
+            <div class="form-row">
+                <label for="visit_date">Date of Visit</label>
+                <input type="date" id="visit_date" name="visit_date">
+            </div>
+
+        
+            <div class="form-row">
+                <label for="phone_number">Phone Number</label>
+                <input type="tel" id="phone_number" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+            </div>
+            
+            <div class="check-row">
+                <div class="space">Where is the best spot to study here in BYUH</div>
+                <label><input type="radio" name="lugar" value="lib">Library</label>
+                <label><input type="radio" name="lugar" value="scb">Science Building</label>
+                <label><input type="radio" name="lugar" value="hgb">HGB</label>
+                <label><input type="radio" name="lugar" value="aloha">Aloha Center</label>
+            </div>
+
+            <div class="check-row">
+                <div class="space"></div>
+                <label>Please check all the reasons why you study in that area: (Check all that applies)</label>
+                <label><input type="checkbox">Minimal noise</label>
+                <label><input type="checkbox">Good Wi-Fi connection</label>
+                <label><input type="checkbox">Close to power outlets</label>
+                <label><input type="checkbox">Access to food and drink</label>
+                <label><input type="checkbox">Moderate temperature</label>
+            </div>
+
+            <div class="check-row">
+                <label for="comment">What's an ideal study room you want to make you comfortable during your personal study session?</label>
+                <textarea name="komento" id="comment"></textarea>
+            </div>
+
+            <div class="form-middle">
+                <input type="submit" value="Submit">
+            </div>
+
+            
+
+
+
+        </fieldset>
+        </form>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>Form</h1>
+    </header>
+
+    <!-- <nav>
+        <a href="#">Link</a></li>
+        <a href="#">Link</a></li>
+        <a href="#">Link</a></li>
+    </nav> -->
+
+    <main>
+        <ol>
+            <li>
+                What is JavaScript? How did it get its name?
+                <br>
+                Invented during 1990's, a programming language. Unique thing about this is, invented to run inside of a browser of a computer.
+                It was named to JavaScript to capitalize the popularity of Java.
+            </li>
+            <li>
+                What are the two ways you can run JavaScript?
+                <br>
+                HTML, displays stuff but not code. JavaScript can be run directly in the browser to enhance web pages, run ins Document Object Model, and the other way is the server which can be run using Node.js
+            </li>
+            <li>
+                What was the most popular front-end js library?
+                <br>
+                jQuery.js
+            </li>
+            <li>
+                What is the most popular front-end js library today?
+                <br>
+                React.js
+            </li>
+        </ol>
+
+        <hr>
+
+        <form action="processing.html" method="post" id="myForm">
+            <fieldset>
+                <legend>Sign Up</legend>
+
+                <div class="form-row">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="first" placeholder="First Name" required="required">
+                </div>
+                
+                <div class="form-row">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="last" placeholder="Last Name">
+                </div>
+
+                <div class="form-row">
+                    <label for="pword">Password:</label>
+                    <input type="password" id="pword" name="pass" >
+                </div>
+            
+            <div class="check-row">
+                <div class="spacer"></div>
+                <label><input type="checkbox" name="rember" checked>Remember Me</label>
+            </div>
+
+            <div>
+                <label for="age">Age: </label>
+                <input type="text">
+            </div>
+
+            <div class="check-row">
+                <div class="spacer">Grade:</div>
+            <!-- If it has the same name then you can only pick one, but if its different then you can choose many -->
+                <label><input type="radio" name="grade" value="Freshman">Freshman</label>
+                <label><input type="radio" name="grade" value="Sophomore">Sophomore</label>
+                <label><input type="radio" name="grade" value="Junior">Junior</label>
+                <label><input type="radio" name="difference" value="Senior">Senior</label>
+            </div>
+
+            <div class="form-row">
+                <label for="state">State</label>
+                <select name="state" id="state">
+                    <option value="blank"></option>
+                    <option value="Hawaii">Hawaii</option>
+                    <option value="Utah">Utah</option>
+                    <option value="California">California</option>
+                    <option value="New York">New York</option>
+                </select>
+            </div>
+           
+            <!-- <div class="form-row">
+                <label for="comment">Comments</label>
+                <textarea name="comment" id="comment"></textarea>
+            </div> -->
+
+            <div class="form-row">
+                <div class="spacer"></div>
+                <input type="submit">
+                
+            </div>
+            </fieldset>
+        </form>
+        
+    </main>
+
+    <footer>
+        <p> &copy;2024, Russel</p>
+    </footer>
+
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event){
+            event.preventDefault();
+            const fname = document.getElementById('fname').value;
+            const lname = document.getElementById('lname').value;
+            const pword = document.getElementById('pword').value;
+            const age = document.getElementById('age').value;
+            const formData = {
+                fname: fname,
+                lname: lname,
+                pword: pword,
+                age: age
+            }
+            if(!fname || !lname){
+                alert("First name and Last name required")
+                return;
+            }
+            if(!age || age < 18){
+                alert("You must be 18 to sign up")
+                return;
+            }
+            console.log(formData)
+            alert("You submitted the form!")
+        })
+
+    </script>
+</body>
+</html>

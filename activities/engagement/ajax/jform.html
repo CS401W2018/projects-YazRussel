@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>Form</h1>
+    </header>
+
+    <!-- <nav>
+        <a href="#">Link</a></li>
+        <a href="#">Link</a></li>
+        <a href="#">Link</a></li>
+    </nav> -->
+
+    <main>
+        <ol>
+            <li>
+                What is AJAX?
+                <br>
+                Asynchronous, means out of order. It allows web pages to update asynchronously by exchanging small amounts of data with the server behind the scenes. It is possible to update parts of a web page, without reloading the whole page, leading to a quicker interactive user experience.
+            </li>
+            <li>
+                Why do you put your JS Code in a separate file?
+                <br>
+                We need to separate JS into external files to enhance website organization and maintainability by allowing code reuse across multiple pages and simplifying updates.
+            </li>
+        </ol>
+
+        <hr>
+
+        <div id="message"></div>
+        <form action="processing.html" method="post" id="myForm">
+            <fieldset>
+                <legend>Sign Up</legend>
+
+                <div class="form-row">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="first" placeholder="First Name" required="required">
+                </div>
+                
+                <div class="form-row">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="last" placeholder="Last Name">
+                </div>
+
+                <div class="form-row">
+                    <label for="pword">Password:</label>
+                    <input type="password" id="pword" name="pass" >
+                </div>
+            
+            <div class="check-row">
+                <div class="spacer"></div>
+                <label><input type="checkbox" name="rember" checked>Remember Me</label>
+            </div>
+
+            <div class="check-row">
+                <div class="spacer"></div>
+                <label name="age">Age: </label>
+                <input type="number" id="age" name="age" min="0" max="120">
+
+            </div>
+
+            <div class="check-row">
+                <div class="spacer">Grade:</div>
+            <!-- If it has the same name then you can only pick one, but if its different then you can choose many -->
+                <label><input type="radio" name="grade" value="Freshman">Freshman</label>
+                <label><input type="radio" name="grade" value="Sophomore">Sophomore</label>
+                <label><input type="radio" name="grade" value="Junior">Junior</label>
+                <label><input type="radio" name="difference" value="Senior">Senior</label>
+            </div>
+
+            <div class="form-row">
+                <label for="state">State</label>
+                <select name="state" id="state">
+                    <option value="blank"></option>
+                    <option value="Hawaii">Hawaii</option>
+                    <option value="Utah">Utah</option>
+                    <option value="California">California</option>
+                    <option value="New York">New York</option>
+                </select>
+            </div>
+           
+            <!-- <div class="form-row">
+                <label for="comment">Comments</label>
+                <textarea name="comment" id="comment"></textarea>
+            </div> -->
+
+            <div class="form-row">
+                <div class="spacer"></div>
+                <input type="submit">
+                
+            </div>
+            </fieldset>
+        </form>
+        
+    </main>
+
+    <footer>
+        <p> &copy;2024, Russel</p>
+    </footer>
+
+    <script src="form.js"></script>
+</body>
+</html>

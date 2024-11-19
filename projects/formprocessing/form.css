@@ -1,0 +1,81 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-row{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+    
+.form-row input{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+.form-row input:focus{
+    background-color: aliceblue;
+}
+
+.spacer{
+    width: 150px;
+    text-align: right;
+}
+
+.form-row label{
+    width: 150px;
+    text-align: right;
+}
+
+
+fieldset{
+    box-shadow: 3px 3px 3px black;
+    background-color: bisque;  
+    width: 50%; 
+}
+
+header h1{
+    text-align: center;
+}
+
+#submit{
+    margin: 0 auto;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+input:not([type='sumbit']), select, textarea{
+    padding: 10px;
+    font-size: 1.5em;
+    border-radius: 3px;
+    background-color: whitesmoke;
+}
+
+input:not([type='sumbit']):focus, select:focus, textarea:focus{
+    background-color: white;
+}
+
+input[type='sumbit']{
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px rgb(200, 200, 200, 50);
+}
+
+
+@media only screen and (max-width: 600px){
+    .form-row, .check-row{
+        flex-direction: column;
+    }
+
+    .form-row{
+        text-align: left;
+    }
+}
+    
+

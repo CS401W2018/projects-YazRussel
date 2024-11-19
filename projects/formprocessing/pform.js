@@ -31,7 +31,7 @@ document.getElementById('myForm').addEventListener('submit', function(event){
         if (xhr.readyState === 4 && xhr.status === 200) {  // Request has completed
                 const response = JSON.parse(xhr.responseText);
                 document.getElementById("message").innerHTML = response.message;
-                document.getElementById("myForm").reset();  // Reset form fields instead of erasing form content
+                document.getElementById("myForm").innerHTML = "";  // Reset form fields instead of erasing form content
                 alert('Form submitted successfully.');
             }
             else if(xhr.readyState === 4){  // Some other status code

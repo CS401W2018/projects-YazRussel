@@ -44,8 +44,20 @@ header h1{
 }
 
 main{
+    display: block;
+    /* justify-content: center; */
+}
+
+#lagyanDaw{
     display: flex;
     justify-content: center;
+}
+
+#message{
+    display: flex;
+    /* text-align: center; */
+    justify-content: center ;
+
 }
 
 input:not([type='sumbit']), select, textarea{

@@ -7,7 +7,7 @@ document.getElementById('myForm').addEventListener('submit', function(event){
     if(!fname || !lname){
         alert("First name and Last name required");
         return;
-    }
+    } 
     if(!age || age < 18){
         alert("You must be 18 or older to submit this form");
         return;

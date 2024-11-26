@@ -1,8 +1,8 @@
-html, body{
-    height: 100%;
+body{
     margin: 0;
     padding: 0;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -230,7 +230,6 @@ section{
     justify-content: left;
     cursor: pointer;
     transition: 0.2s ease-in-out;
-
 }
 
 .grid-card:hover{
@@ -389,6 +388,7 @@ a{
 }
 
 .photo-text{
+    width: 20%;
     position: absolute;
     bottom: 50%;
     right: 10%;
@@ -400,6 +400,54 @@ a{
 
 #photo-about{
     width:100%;
+}
+
+/* Table */
+.left{
+    order:-1;
+    margin: 5px 10px;
+    padding: 10px;
+    width: 50%;
+}
+
+.right{
+    order:2;
+    margin: 5px 10px;
+    padding: 10px;
+    width: 40%;
+}
+
+.chart{
+    margin: 5px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    caption-side: bottom;
+}
+.chart td, .chart thead{
+    text-align: center;
+    padding: 10px 5px;
+    border: thin solid black;
+}
+.chart tbody tr:nth-child(even){
+    background-color: #F9F9F9;
+    text-align: center;
+}
+.chart tbody tr:nth-child(odd){
+    /* background-color: #fec5bb; */
+    text-align: center;
+}
+.chart thead{
+    background-color: #EEEEEE;
+}
+
+.table-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: column wrap-reverse;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 @media only screen and (max-width: 1280px) {
@@ -423,6 +471,7 @@ a{
     .input-box i{
         font-size: 2.5rem;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -454,6 +503,20 @@ a{
     }
     .experience-info img{
         width: 70vw;
+    }
+    .table-container{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .left{
+        margin: 0 auto;
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+        margin: 0 auto;
+        justify-items: center;
+        text-align: center;
     }
 }
 
@@ -504,5 +567,19 @@ a{
     footer ul{
         gap:1rem;
 
+    }
+    .table-container{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .left{
+        margin: 0 auto;
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+        margin: 0 auto;
+        justify-items: center;
+        text-align: center;
     }
 }

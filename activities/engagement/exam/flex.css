@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    /* flex-direction: column-reverse; */
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    justify-items: center;
+
+    gap: 10px;
+}
+.item{
+    align-self: end;
+    justify-self: flex-start;
+    background-color: aquamarine;
+    /* margin: 20px; */
+    width: 150px;
+    padding: 5px 10px;
+}

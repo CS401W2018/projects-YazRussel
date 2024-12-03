@@ -1,0 +1,37 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "aside1 main aside2"
+        "footer footer footer";
+}
+
+header{grid-area: header;}
+nav{ grid-area: nav;}
+.aside1{grid-area: aside1;}
+.aside2{grid-area: aside2;}
+main{grid-area: main;}
+footer{grid-area: footer;}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 200px;
+    gap: 10px;
+    grid-template-areas:
+        "header1 header2 header3"
+        "main1 main2 main3";
+}
+
+.item{
+    background-color: aquamarine;
+}
+
+.itemA{ grid-area: main2;}
+.itemB{ grid-area: main1;}
+.itemC{ grid-area: header2;}
+.itemD{ grid-area: main3;}
+.itemE{ grid-area: header1;}
+.itemF{ grid-area: header3;}

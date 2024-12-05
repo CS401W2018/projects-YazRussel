@@ -70,6 +70,7 @@ li a:hover::before{
 }
 
 .visit-btn{
+    margin: 0;
     padding: 0.8rem 1.5rem;
     border-radius: 3rem;
     border: none;
@@ -81,6 +82,11 @@ li a:hover::before{
     transition: 0.3s ease-in-out;
     background: linear-gradient(to right, #FF5912, #1F3EB0);
 }
+.visit-btn a{
+    color: white;
+}
+
+
 #photoLink{
     width: 130px;
     justify-self: center;
@@ -99,6 +105,10 @@ li a:hover::before{
 .btn a{
     text-decoration: none;
     color: black;
+}
+
+.btn:hover .github-repo{
+    color: black
 }
 
 .btn:hover a{
@@ -139,8 +149,13 @@ section{
 .about img{
     width: 30vw;
     border-radius: 50%;
-
 }
+.youtube-photo{
+    width: 10vw;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
 .home-me{
     display: flex;
     flex-direction: column;
@@ -268,7 +283,14 @@ section{
     border-radius: 3rem;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+}
 
+.project-card a{
+    color: black;
+}
+
+.project-card:hover a{
+    color: white;
 }
 
 .project-card:hover{
@@ -389,27 +411,33 @@ footer ul li a{
 }
 
 .copyright{
-    font-size: 300;
+    font-size: 18px;
     margin-top: 2rem;
 }
 #loom-companion-mv3{
     display: none;
 }
 
-a{
+.socials a{
     color: black;
 }
 
 .upper-photo{
     position: relative;
-    display: inline-block;
+    display: block;
+}
+
+.upper-photo img{
+    width: 100%;
+    height: auto;
+
 }
 
 .photo-text{
     width: 20%;
     position: absolute;
     bottom: 50%;
-    right: 10%;
+    right: 100px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 3rem;
     font-weight: 600;
@@ -437,6 +465,7 @@ a{
     align-content: center;
 }
 
+
 .chart{
     margin: 5px auto;
     border-collapse: separate;
@@ -456,17 +485,15 @@ a{
     text-align: center;
 }
 .chart tbody tr:nth-child(odd){
-    /* background-color: #fec5bb; */
     text-align: center;
 }
 .chart thead{
     background-color: #EEEEEE;
 }
-
 .table-container{
     width: 100%;
     display: flex;
-    flex-wrap: column wrap-reverse;
+    flex-wrap: wrap-reverse;
     grid-template-columns: repeat(2, 1fr);
 }
 
@@ -513,6 +540,53 @@ a{
     padding: 3rem;
 }
 
+.channel-grid{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.with-link a{
+    font-weight: 700;
+    color: #1F3EB0;
+}
+#map{
+    display: block;
+    margin: 10px auto;
+}
+.linkto{
+    justify-self: right;
+    margin-right: 20px;
+    text-align: end;
+    width: 50%;
+    font-size: 8px;
+    color: gray;
+}
+
+.link:hover{
+    color: orange
+}
+.link{
+    font-weight: 600;
+}
+
+#active{
+    background: linear-gradient(to right, #FF5912, #1F3EB0);
+    background-clip: text;
+    color: transparent;
+}
+.videolds{
+    width: 750px;
+    height: 600px;
+}
+.cite{
+    text-align: right;
+    width: 50%;
+    font-size: 8px;
+    color: gray;
+}
+
+
 
 
 
@@ -545,13 +619,17 @@ a{
         margin: 0 auto;
         padding: 3rem;
     }
+    .photo-text{
+        right: 15%;
+    }
+    
 
 }
 
 @media (max-width: 768px) {
     header{
         gap: 1rem;
-        padding: 1rem 1 rem;
+        padding: 1rem 1rem;
     }
     header .logo{
         font-size: 1rem;
@@ -567,7 +645,7 @@ a{
         font-size: 1.8rem
     }
     .input-box input::placeholder{
-        font-size: 1.5 rem;
+        font-size: 1.5rem;
     }
     .input-box i{
         display: none;
@@ -609,6 +687,19 @@ a{
     }
     #message{
         width: 430px;
+    }
+    .channel-grid{
+        display: flex;
+        flex-direction: column;
+    }
+    .photo-text{
+        width: 90px;
+        bottom: 1rem;
+        right: 7rem;
+        font-size: 2rem;
+        color: white;
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    
     }
 }
 
@@ -674,9 +765,16 @@ a{
         justify-items: center;
         text-align: center;
     }
-
     #message{
         width: 310px;
+    }
+    footer ul{
+        display: grid;
+    }
+    footer li{
+        text-align: center;
+    
+    
     }
 
     
